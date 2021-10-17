@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.navheader{
+    color: black;
+    margin: 0 3px;
+}
+.navheader::after{
+    content: " | ";
+    color: black;
+}
+.figbureau{
+    margin: auto;
+}
+.bureau{
+    width: 100%;
+    height: 400px;
+}
+h1{
+    text-align: center;
+    margin: 5px;
+}
+.sectionprofil{
+    display: flex;
+    background-color: lightgray;
+}
+figcaption{
+    text-align: center;
+}
+p{
+    display: flex;
+    background-color: gray;
+    margin: 2em 5em 0 0;
+    padding-top: 20px;
+    font-size: large;
+}
+.comp{
+    margin-left: 1em;
+}
+.image{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.titleul{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.artul{
+    display: flex;
+    white-space: pre-line;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+h6{
+    font-size: x-large;
+    margin-left: 1em;
+    margin-top: 5px;
+}
+.navfooter{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.afooter{
+   color: whitesmoke;
+   margin: 0 3px; 
+}
+.afooter::after{
+    content: " | ";
+    color: whitesmoke;
+}
+@media screen and (min-width: 414px) {
+    nav{
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .navheader{
+        text-align: center;
+        margin: 10px;
+        font-size: x-large;
+    }
+    .profil{
+        margin-top: 6em;
+    }
+    .presente{
+        font-size: 30px;
+    }
+    p{
+        margin-bottom: 2em;
+    }
+    .navfooter{
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+    }
+    .afooter{
+        text-align: center;
+        font-size: x-large;
+        margin: 15px;
+    }
+    
+}

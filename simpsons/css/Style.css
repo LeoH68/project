@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+/* Corps du document  */
+body{
+    background-color: rgb(255, 217, 0);
+}
+/* titres */
+h1{text-align:center;color: rgb(240, 240, 240);background-color: rgb(32, 132, 214);}
+h2{color: rgb(238, 195, 4);margin-bottom: 15px;margin-top: 1em;}
+h3{text-align: center;font-size: 200%;}
+
+
+/* nav */
+nav{
+   background-color: rgb(36, 102, 202);
+   width:13%;
+   height: 0%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 15px 0;
+}
+a{
+    color: whitesmoke;
+    padding: 5px 0;
+ }
+figure{
+    height: 400px;
+    margin: 0; 
+}
+/* image */
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+   }
+
+/* article */
+article{
+   width:68%;
+   padding: 0 1em;
+}
+aside{
+   color: white;
+   background-color: rgb(33, 92, 202);
+   width:20%;
+   padding: 0 1em;
+}
+/* footer */
+footer{
+   background-color: hsl(219, 56%, 48%);
+   text-align: center;
+   color: whitesmoke;
+   margin-bottom: 0;
+   padding: 5px 0;
+}
+/* contenu principal de la page */
+main{
+   display: flex;
+   padding: 2em 1em;
+   height: 100%;
+}
+/* conteneur */
+#wrapper{
+    width:80%;
+    margin: auto;
+    background-color: aliceblue;
+}
+.figure{
+    width: 80%;
+    margin: 15px auto;
+    height: auto;
+  }
+.text{
+    padding: 20px 5px;
+    text-align: justify;
+}
+.matt{
+    height: 100%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+p{
+    text-align: justify;
+}
+@media screen and (max-width: 414px) {
+    body{
+      height: fit-content;
+      width: fit-content;
+    }
+    #wrapper{
+      width: auto;
+      margin: auto;
+    }
+    figure{
+        height: auto;
+    }
+    main{
+        flex-direction: column;
+    }
+    nav{
+        width: auto;
+        display: block;
+    }
+    article{
+        width: 90%;
+        margin: 20px;
+    }
+    .text{
+        text-align: center;
+    }
+    aside{
+        min-inline-size: fit-content;
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    #wrapper{
+        width: auto;
+    }
+    h3{
+        text-align: center;
+        font-size: 150%;
+    }
+    .text{
+        overflow-wrap: break-word;
+        text-align: left;
+    }   
+}
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    #wrapper{
+        width: auto;
+    }
+    figure{
+        height: auto;
+    }
+    main{
+        flex-direction: column;
+    }
+    nav{
+        width: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+     article{
+        width: 90%;
+        margin: 20px;
+    }
+    aside{
+        width: 90%;
+        align-self:center ;
+        margin-right: 25px;
+        display: flex;
+    }
+    .MattText{
+        width: fit-content;
+        margin: 20px;
+        font-size: 2em;
+    }
+    h3{
+        text-align: center;
+        font-size: 200%;
+    }
+    p{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 1em;
+        text-align: left;
+    }
+}    
+   

@@ -1,0 +1,82 @@
+
+1) Var nb en numerique
+    start
+        write "Donnez moi un nombre"
+        read nb
+            if nb < 0 then 
+                write "Ce nombre est négatif"
+                else
+                write "Ce nombre est positif"
+            endif
+    end
+
+2) Var nb1, nb2 en numerique
+    start
+        read ("Donnez moi un nombre:"; nb1)
+        read ("Donnez moi un nombre:"; nb2)
+            if ((nb1 and nb2 > 0) or (nb1 and nb2 < 0)) then
+                write ("le produit est positif")
+                else
+                write ("le produit est négatif")
+            endif
+    end
+
+3) Var name1, name2, name3 : string
+    start
+        write ("Give me a name")
+        read name1
+        write ("Give me a name")
+        read name2
+        write ("Give me a name")
+        read name3
+            if A < B and B < C then
+                write ("The names are in order")
+                else
+                write ("The names are in disorder")
+            endif
+    end
+
+4) Var nb : int
+    start
+        write ("Give me a number")
+        read nb
+            if nb > 0 then
+                write ("Ce nombre est positif")
+                    else if nb < 0 then
+                write ("Ce nombre est négatif")
+            else
+                write ("Il sagit du zéro")
+            endif
+     end
+
+5) Var nb1, nb2 : int
+    start
+        write "Donnez moi un premier nombre"
+        read nb1
+        write "Donnez moi un deuxième nombre"
+        read nb2
+            if (nb1 > 0 and nb2 > 0) or (nb1 < 0 and nb2 < 0) then
+            write "Le produit est positif"
+                else if (nb1=0 or nb2=0) then
+                write "Le produit vaut 0"
+            else
+                "Le produit est négatif"
+            endif
+    end
+
+6) Var age int
+    start
+        write ("Donnez moi un age")
+        read age
+            if age < 6 then
+                write "Votre enfant n'entre dans aucune catégorie"
+                    else if age < 8 then
+                        write "Poussin"
+                    else if age < 10 then
+                        write "Pupille"
+                    else if age < 12 then
+                        write  "Minine"
+                    else if age > 12 then
+                        write "Cadet"
+            endif
+    end
